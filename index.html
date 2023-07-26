@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="controls">
+        <input type="button" id="loadImage" value="Add Image" onclick="document.getElementById('file').click();" />
+        <input id="file" type="file" multiple onchange="showFile()" accept="image/*" style="display:none;">
+        <button class="LEFT">LEFT</button>
+        <button class="RIGHT">RIGHT</button>
+        <input id="angel" placeholder="Angle" value="45">
+    </div>
+    <div id="preview"></div>
+    <script src="./js/rotate.js"></script>
+    <script src="opencv.js" type="text/javascript"></script>
+</body>
+</html>
